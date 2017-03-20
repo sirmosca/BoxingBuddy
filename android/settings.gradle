@@ -1,0 +1,3 @@
+rootProject.name = 'BoxingBuddy'
+
+include ':app'
