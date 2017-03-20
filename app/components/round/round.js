@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, StyleSheet } from 'react-native';
 
 const timer = require('react-native-timer');
 
@@ -29,9 +29,19 @@ class Round extends Component {
 
     render = () => {
         return (
-            <Text>{this.state.count}</Text>
+            <Text style = {styles.myText}>{this.state.count}</Text>
         );
     }
 }
 
 export default Round;
+
+const styles = StyleSheet.create ({
+   myText: {
+      marginTop: 50,
+      textAlign: 'center',
+      color: 'blue',
+      fontWeight: 'bold',
+      fontSize: 30
+   }
+})
